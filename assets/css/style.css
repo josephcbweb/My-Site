@@ -1,0 +1,259 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(-45deg, #c0eee4, #f8f988, #ffcac8, #cbe4de);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+header {
+  height: 100vh;
+  transition: ease-in-out 0.3s;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.main-text h1 {
+  font-family: "Sacramento", cursive;
+  font-size: 120px;
+}
+.main-text h2 {
+  font-family: "Pacifico", cursive;
+  font-weight: normal;
+  font-size: 40px;
+}
+.main-text p {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Comic Neue", cursive;
+}
+
+.main-text * {
+  margin: 10px 0;
+  transition: ease-in-out 0.3s;
+}
+.main-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+hr {
+  width: 15%;
+  border-width: 8px 0 0 0;
+  border-style: dotted;
+  margin: 100px auto 30px;
+}
+@media (max-width: 900px) {
+  .main-text h1 {
+    font-family: "Sacramento", cursive;
+    font-size: 60px;
+  }
+  .main-text h2 {
+    font-size: 20px;
+  }
+  .main-text p {
+    font-size: 20px;
+  }
+  .main-text * {
+    margin: 10px 0;
+    transition: ease-in-out 0.3s;
+  }
+  .main-text {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+  }
+  .profile-text {
+    width: 80%;
+    margin-top: 50px;
+    font-size: 18px;
+    text-align: left;
+    padding: 0 30px;
+    line-height: 1.5;
+  }
+}
+
+/* about */
+#profile {
+  margin: 0;
+  padding: 20px 0;
+  width: 100%;
+  /* background: linear-gradient(120deg,#c0eee450,#f8f98850); */
+  color: #212a3e;
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  text-align: center;
+}
+.profile-text {
+  width: 80%;
+  padding: 0 30px;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0 auto;
+}
+.profile-text > p {
+  margin: 5px 0;
+}
+#profile img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+.skills img {
+  transition: ease-in-out 0.3s;
+  width: 100%;
+  height: auto;
+}
+.skills,
+h2 {
+  font-family: "Inter", sans-serif;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+.skill-row {
+  padding: 40px 0;
+  color: #212a3e;
+}
+.skill-row a {
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(78, 78, 187);
+}
+@media (min-width: 1030px) {
+  #profile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile-text {
+    width: 80%;
+    line-height: 1.8;
+  }
+  #profile img {
+    width: 150px;
+  }
+  .skills {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  .skills img {
+    transition: ease-in-out 0.3s;
+    width: 300px;
+    height: 250px;
+  }
+}
+@media (min-width: 480px) and (max-width: 1030px) {
+  #profile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile-text {
+    line-height: 1.8;
+  }
+  #profile img {
+    width: 150px;
+  }
+  .skills {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .skills p {
+    width: 100%;
+  }
+  .skills img {
+    transition: ease-in-out 0.3s;
+    width: 50%;
+    height: 20%;
+  }
+}
+
+/* contact */
+
+.contact-me {
+  font-family: "Inter", sans-serif;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.hr2 {
+  width: 15%;
+  border-width: 8px 0 0 0;
+  border-style: dotted;
+  margin: 150px auto 150px;
+}
+/* footer */
+
+.bottom-container {
+  margin: 200px 0 0 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  font-size: 12px;
+}
+.footer-img {
+  padding: 0 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.btn {
+  color: rgb(39, 32, 71);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn:after {
+  content: "";
+  background-color: #c0eee4;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.btn:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+}
+
+.quest {
+  margin-bottom: 40px;
+}
